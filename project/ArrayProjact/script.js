@@ -5,7 +5,7 @@ function pushArrayRandom(array){
         return alert(`Не может быть min больше чем max`)
     }else{
         for(i = 0; i<array.length; i++){
-        array[i] = Number(Math.random()*(max-min) + min)
+        array[i] = parseInt(Math.random()*(max-min) + min)
         }
         return array
     }
