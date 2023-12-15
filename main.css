@@ -149,3 +149,52 @@ li{
     0 0 20px #e41cf8,
     0 0 50px #e41cf8;
 }
+.about{
+    display: flex;
+    justify-content: center;
+    
+}
+.container_about{
+    display: flex;
+    padding: 40px;
+    background: transparent;
+    border-radius: 10px;
+    transition: .5s ease;
+}
+.container_about:hover{
+    background: rgba(255, 255, 255, 0.5);
+}
+.img_about{
+    width: 250px;
+    height: 250px;
+}
+.span_p{
+    font-size: 32px;
+    color: #e41cf8;
+}
+.p_about{
+    max-width: 385px;
+    margin-top: 10px;
+}
+.p_about_main{
+    max-width: 385px;
+    margin-top: 10px;
+    font-size: 24px;
+}
+.social{
+    display: flex;
+    margin-top: 30px;
+    gap: 20px
+}
+.link_about{
+    display: flex;
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+    border:  1px solid #fff;
+    padding: 10px;
+    border-radius: 50%;
+}
+.container_about_p{
+    cursor: default;
+}
