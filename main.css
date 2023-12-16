@@ -9,13 +9,18 @@ body{
     background: #111;
     height: 100%;
 }
+.h1{
+    display: flex;
+    justify-content: center;
+}
 .h1_main{
     display: flex;
-    font-size: 24px;
     justify-content: center;
+    width: 685px;
+    font-size: 24px;
     background: transparent;
     margin: 50px;
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 20px;
     cursor: none;
     transition: .5s ease;
