@@ -9,19 +9,22 @@ function Click(){
     } 
 }
 function Show(){
+    let str = document.getElementById('str');
     if(plans[1] == undefined){
         alert('Планов нет');
     }
     else{
-        for(i = 1; i < plans.length; i++){
-            alert(`${i}. ${plans[i]}`);
+        for(i = 0; i < plans.length; i++){
+            str.insertAdjacentHTML("beforebegin", `<li class="h1" id="str">${plans[i]}</li>`)
         }
     }
 }
 function Clear(){
     document.getElementById('input1').value ='';
-    
+    document.getElementById('d').innerHTML="<ul><li class='h1' id='str'></li></ul>";
 }
 function ClearDay(){
-    plans = ['']; 
+    plans = [''];
+    document.getElementById('input1').value ='';
+    document.getElementById('d').innerHTML="<ul><li class='h1' id='str'></li></ul>";
 }
