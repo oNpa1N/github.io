@@ -75,6 +75,11 @@ function get(id, key){
 //Изменение элемента массива в локальном хранилище 
 function edit(id, key, newValue){
     let arr = getAll(id);
-    arr[key] = newValue; 
-    saveAll(1, arr);
+    if(key > arr.length){
+        alert("Андрей засранец нашел ошибку здесь")
+    }else{
+        arr[key] = newValue; 
+        saveAll(1, arr);
+    }
+   
 }
