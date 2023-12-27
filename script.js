@@ -1,14 +1,14 @@
-let was_i_here = "";
+let was_i_here = 1;
 try{
     was_i_here = localStorage.getItem(1);
 }
 catch{}
-if(was_i_here == 'ok'){
+if(was_i_here == 1){
     alert("Снова привет)");
 }
 else{
     alert('Ты в первые на моем сайте, Хорошо провести время');
-    localStorage.setItem(1,'ok');
+    localStorage.setItem(1,1);
 }
 ScrollReveal({ 
     //reset: true,
@@ -21,4 +21,3 @@ ScrollReveal().reveal('.h1', { origin: 'top' });
 ScrollReveal().reveal('.container_item', { origin: 'bottom' });
 ScrollReveal().reveal('.container_about_p, .works', { origin: 'left' });
 ScrollReveal().reveal('.img_about, .container_item_p', { origin: 'right' });
-
