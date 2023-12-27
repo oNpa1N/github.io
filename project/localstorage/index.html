@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPlan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <h1 class="header">Мои планы</h1>
+     <p class="header_p">Впишите свои планы на сегодня</p>
+     <input type="text" class="input_plan" id="input_plan" maxlength="50" placeholder="">
+     <div class="interface">
+        <button class="button" onclick="setPlans()">Добавить</button>
+        <button class="button" onclick="getPlans()">Показать</button>
+        <button class="button" onclick="clearPlans()">Очистить план</button>
+        <button class="button" onclick="editPunct()">Редактировать пункт</button>
+        <button class="button" onclick="allclearPlans()">Удалить план</button>
+    </div>
+    <div class="plans" id='plans'>
+        <ul>
+            <li class="plans_p" id="str"></li>
+        </ul>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
